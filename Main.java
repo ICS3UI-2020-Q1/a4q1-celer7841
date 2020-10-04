@@ -2,6 +2,7 @@
  *
  * @author 
  */
+ import java.util.Scanner;
 public class Main {
 
   /**
@@ -10,6 +11,13 @@ public class Main {
    */
   public static void main(String[] args) {
     // TODO code application logic here
-    
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Please enter a number");
+    int number = sc.nextInt();
+    int counter = 100;
+    while(counter >= number) {
+      System.out.println(counter);
+      counter = counter -5;
+    }
   }
 }
